@@ -1,5 +1,5 @@
 # Ex02 Django ORM Web Application
-# Date:
+# Date:19/10/2024
 # AIM
 To develop a Django application to store and retrieve data from a bank loan database using Object Relational Mapping(ORM).
 
@@ -21,26 +21,27 @@ Execute Django admin and create details for 10 books
 ```
 admin.py:
 from django.contrib import admin
-from .models import Employee,EmployeeAdmin
-admin.site.register(Employee,EmployeeAdmin)
+from .models import bankloan,bankloanAdmin
+admin.site.register(bankloan,bankloanAdmin
 
 models.py:
 from django.db import models
 from django.contrib import admin
-class Employee(models.Model):
-    eid=models.CharField(max_length=20,help_text="Employee_ID")
-    name=models.CharField(max_length=100)
-    salary=models.IntegerField()
-    age=models.IntegerField()
-    email=models.EmailField()
+class bankloan(models.Model):
+    Name=models.CharField(max_length=100)
+    Accountno=models.IntegerField(primary_key="Accountno")
+    Startdate=models.DateField()
+    Email=models.EmailField()
+    Mobilenumber=models.IntegerField()
+    Amount=models.IntegerField()
 
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
+class bankloanAdmin(admin.ModelAdmin):
+    list_display=('Name','Accountno','Startdate','Email','Mobilenumber','Amount')
 ```
 # OUTPUT
-![Screenshot 2024-12-07 204500](https://github.com/user-attachments/assets/5d72d36d-234a-4a2e-bad5-3e73c6258dd5)
-![Screenshot 2024-12-07 163150](https://github.com/user-attachments/assets/7fd2e64e-6cc6-4396-b434-d0b4e0d3366f)
-
+![PAINT](https://github.com/user-attachments/assets/a789431a-8391-4a45-8059-d94088aca29a)
+![Screenshot 2024-12-07 222431](https://github.com/user-attachments/assets/dece8314-36c1-48be-a5c6-1d3ca9dad98e)
+![Screenshot 2024-12-07 222417](https://github.com/user-attachments/assets/67f7cf75-7a21-486a-aac0-19d9b3c476c1)
 
 # RESULT
 Thus the program for creating a database using ORM hass been executed successfully

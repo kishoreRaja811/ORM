@@ -42,6 +42,7 @@ class bankloanAdmin(admin.ModelAdmin):
 ![PAINT](https://github.com/user-attachments/assets/a789431a-8391-4a45-8059-d94088aca29a)
 ![Screenshot 2024-12-07 222431](https://github.com/user-attachments/assets/dece8314-36c1-48be-a5c6-1d3ca9dad98e)
 ![Screenshot 2024-12-07 222417](https://github.com/user-attachments/assets/67f7cf75-7a21-486a-aac0-19d9b3c476c1)
+![Screenshot 2024-12-12 132041](https://github.com/user-attachments/assets/68f66a55-7821-4813-bbf9-0c5bc21ea3fd)
 
 # RESULT
 Thus the program for creating a database using ORM hass been executed successfully
